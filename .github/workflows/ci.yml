@@ -10,9 +10,9 @@ jobs:
   matrix-pip:
     name: Train and save the model
     runs-on: ubuntu-latest
-    stratergy:
+    strategy:
       matrix:
-        python-version: ["3.11" , "3.12"]
+        python-version: [3.11 , 3.12]
 
     steps:
       - name: checkout code
